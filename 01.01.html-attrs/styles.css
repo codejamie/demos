@@ -1,0 +1,10 @@
+body {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.instructions {
+  background-color: aliceblue;
+  border: 2px solid lightskyblue;
+  padding: 10px;
+}
