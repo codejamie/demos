@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays and Loops</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+  <h1>Arrays and Loops</h1>
+  <h2>Common Array Methods</h2>
+  <section>
+    <h3>Array.map()</h3>
+    <p>The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.</p>
+    <p>MDN Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">Array.prototype.map()</a></p>
+    <h4>Example</h4>
+    <code>const array1 = [1, 4, 9, 16];</code>
+    <code>// Pass a function to map</code>
+    <code>const map1 = array1.map((x) => x * 10);</code>
+    <code>console.log(map1);</code>
+    <code>// Expected output: Array [10, 40, 90, 160]</code>
+  </section>
+  <section>
+    <h3>Array.shift()</h3>
+    <p>The shift() method of Array instances removes the first element from an array and returns that removed element. This method changes the length of the array.</p>
+    <p>MDN Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift">Array.prototype.shift()</a></p>
+    <h4>Example</h4>
+    <code>const array1 = [1, 2, 3];</code>
+    <code>const firstElement = array1.shift();</code>
+    <code>console.log(array1);</code>
+    <code>// Expected output: Array [2, 3]</code>
+    <code>console.log(firstElement);</code>
+    <code>// Expected output: 1</code>
+  </section>
+  <section>
+    <h3>Array.splice()</h3>
+    <p>The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</p>
+
+    <p>To create a new array with a segment removed and/or replaced without mutating the original array, use toSpliced(). To access part of an array without modifying it, see slice().</p>
+    <p>MDN Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">Array.prototype.splice()</a></p>
+    <h4>Example</h4>
+    <code>const months = ['Jan', 'March', 'April', 'June'];</code>
+    <code>months.splice(1, 0, 'Feb');</code>
+    <code>// Inserts at index 1</code>
+    <code>console.log(months);</code>
+    <code>// Expected output: Array ["Jan", "Feb", "March", "April", "June"]</code>
+    <code>months.splice(4, 1, 'May');</code>
+    <code>// Replaces 1 element at index 4</code>
+    <code>console.log(months);</code>
+    <code>// Expected output: Array ["Jan", "Feb", "March", "April", "May"]</code>
+  </section>
+
+  <script src="./script.js"></script>
+  
+</body>
+</html>
+
