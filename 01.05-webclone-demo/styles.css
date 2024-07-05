@@ -87,7 +87,7 @@ nav>ul>li:last-child {
 .global-nav a.bitesize-link:hover span.hover-state {
   border-bottom: 2px solid #963DE1;
 }
-`
+
 .content {
   width: 80vw;
   display: flex;
