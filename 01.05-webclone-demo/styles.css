@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+html, body {
+  box-sizing: border-box;
+  width: 90vw;
+  margin: 0 auto;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+.global-nav {
+  width: 90vw;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 1em;
+}
+
+.global-nav i {
+  margin-right: 20px;
+}
+
+.global-nav .logo {
+  max-width: 112px;
+  max-height: 32px;
+  margin-right: 20px;
+}
+
+nav>ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  width: 1200px;
+}
+
+nav>ul>li:last-child {
+  margin-right: 1.8rem;
+}
+
+.global-nav a {
+  text-decoration: none;
+  color: black;
+  padding-left: 1em;
+}
+
+.global-nav a span {
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 0 0.5em 0.8em 0.5em;
+}
+
+.global-nav a span {
+  transition: all 0.1s ease-in-out;
+}
+
+.global-nav a.home-link:hover span.hover-state {
+  border-bottom: 2px solid black;
+}
+
+.global-nav a.news-link:hover span.hover-state {
+  border-bottom: 2px solid #EB1311;
+}
+
+.global-nav a.sport-link:hover span.hover-state {
+  border-bottom: 2px solid #FDD230;
+}
+
+.global-nav a.weather-link:hover span.hover-state {
+  border-bottom: 2px solid #269EDC;
+}
+
+.global-nav a.iplayer-link:hover span.hover-state {
+  border-bottom: 2px solid #F94C98;
+}
+
+.global-nav a.sounds-link:hover span.hover-state {
+  border-bottom: 2px solid #F96401;
+}
+
+.global-nav a.bitesize-link:hover span.hover-state {
+  border-bottom: 2px solid #963DE1;
+}
+`
+.content {
+  width: 80vw;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex; 
+}
+
