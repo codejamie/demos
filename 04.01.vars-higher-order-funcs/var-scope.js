@@ -1,3 +1,5 @@
+console.log("Uncomment each example to run it.");
+
 // Global Scope Example
 // let age = 21;
 // console.log("");
